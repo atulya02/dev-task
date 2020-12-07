@@ -30,13 +30,9 @@ export default class folder extends Component {
                                 {this.props.body}
                             </button></Link>
                         </h1>
-                        <p class="text-grey-darker text-sm font-bold">
-                        ID-{this.props.id}
-                        </p>
+                        <button type="submit" class="flex items-end py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-black bg-white-600 hover:bg-white-700 hover:text-red-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500" onClick={this.props.delete}>Delete</button>
                     </header>
-                    <div  class="">
-                    <button type="submit" class="flex items-end py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-black bg-white-600 hover:bg-white-700 hover:text-red-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500" onClick={this.props.delete}>Delete</button>
-                    </div>
+                    
                     
     
                 </article>

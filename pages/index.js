@@ -82,11 +82,16 @@ addFolder=()=>{
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div class="pl-50 grid grid-cols-3 gap-2 flex flex-wrap content-start justify-center  content-center px-40">
-        <h1 class="text-2xl px-50">Folders</h1>
+        <h1 class="text-2xl px-50 pb-2">Folders</h1>
         
       </div>
-      <hr/>
+      <div class="pl-50 grid grid-cols-1 gap-2 flex flex-wrap content-start justify-center  content-center px-40">
+      <hr size="1" width="80%"/>
+        
+      </div>
+     
       <ul class="grid grid-cols-3 gap-2 flex flex-wrap content-start justify-center  content-center px-40 ">
+        <File></File>
                     {
                         this.state.folderarray.map((folder,index)=>{
                             return(

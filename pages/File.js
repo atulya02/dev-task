@@ -1,40 +1,49 @@
 import Link from 'next/link';
+import React, { Component } from 'react'
 
-const File = () => (
 
-    <div class="container my-12 mx-auto px-4 md:px-12">
-        <div class="flex flex-wrap -mx-1 lg:-mx-4">          
-            
-            <div class="my-1 px-1 w-1/2 md:w-1/6 lg:my-4 lg:px-4 lg:w-1/6">
+export default class folder extends Component {
+     refreshPage(){ 
+        window.location.reload(); 
+    }
+    render() {
+        return (
+            <div class="justify-center  content-center items-center">
+                <li class="justify-center  content-center items-center">
+                <div class=" self-center my-12 mx-25 px-4 md:px-12 text-center  content-center">
+        <div class="flex flex-wrap -mx-1 lg:-mx-3 text-center  content-center">
     
-                
-                <article class="overflow-hidden rounded-lg shadow-lg">
+            <div class="my-1 px-1 w-full md:w-1/2 lg:my-1 lg:px-1 lg:w-full">
     
-                    <a href="#">
-                        <img alt="Placeholder" class="block h-auto w-full" src="https://cdn3.iconfinder.com/data/icons/brands-applications/512/File-512.png">
-                   </img> </a>
+                <article class="overflow-hidden rounded-lg shadow-lg text-center  content-center">
     
-                    <header class="flex items-center justify-between leading-tight p-2 md:p-4">
+                   <Link href={'#' +this.props.body} passHref={true}>
+                   <button >
+                        <img alt="Placeholder" class="block h-auto w-full" src="https://img.icons8.com/pastel-glyph/2x/file.png"></img>
+                    </button></Link>
+    
+                    <header class="flex items-center justify-between leading-tight p-2 md:p-4 text-center  content-center">
                         <h1 class="text-lg">
-                            <a class="no-underline hover:underline text-black" href="#">
+                            
+                            <Link href={'#' +this.props.body} passHref={true} >
+                            <button onClick={ this.refreshPage } >
                                 File Name
-                            </a>
+                            </button></Link>
                         </h1>
-                        <p class="text-grey-darker text-sm">
-                            Created On-7/12/2020
-                        </p>
+                        <button type="submit" class="flex items-end py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-black bg-white-600 hover:bg-white-700 hover:text-red-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500" onClick={this.props.delete}>Delete</button>
                     </header>
-    
+                    
                     
     
                 </article>
-               
     
-            </div>
-            
+            </div>         
+           
     
         </div>
     </div>
-)
-
-export default File
+                </li>
+            </div>
+        )
+    }
+}
