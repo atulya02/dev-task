@@ -19,14 +19,14 @@ export default class folder extends Component {
     
                    <Link href={'#' +this.props.body} passHref={true}>
                    <button >
-                        <img alt="Placeholder" class="block h-auto w-full" src="https://img.icons8.com/pastel-glyph/2x/file.png"></img>
+                        <img alt="Placeholder" class="block h-auto w-full transform scale-75" src="https://img.icons8.com/pastel-glyph/2x/file.png"></img>
                     </button></Link>
     
-                    <header class="flex items-center justify-between leading-tight p-2 md:p-4 text-center  content-center">
+                    <header class="flex items-center justify-between leading-tight p-2 md:p-4 text-center  content-center ">
                         <h1 class="text-lg">
                             
                             <Link href={'#' +this.props.body} passHref={true} >
-                            <button onClick={ this.refreshPage } >
+                            <button onClick={ this.refreshPage } class="font-bold">
                                 File Name
                             </button></Link>
                         </h1>
