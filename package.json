@@ -6,13 +6,12 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start",
-    "predeploy": "npm run build",
- "deploy": "gh-pages -d build"
+    "start": "next start -p $PORT",
+    "heroku-postbuild":"npm run build"
+
   },
   "author": "",
   "license": "ISC",
-  "homepage": "http://atulya02.github.io/dev-task",
   "dependencies": {
     "autoprefixer": "^9.8.6",
     "next": "^10.0.3",

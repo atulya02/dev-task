@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Folder from './folder';
 import File from './File'
-import Navbar from './navbar';
+import Navigationbar from './Navigationbar';
 import React, { Component } from 'react'
 
 export default class Index extends Component {
@@ -62,7 +62,7 @@ addFolder=()=>{
   render() {
     return (
       <div class="grid " >      
-      <Navbar/> 
+      <Navigationbar/> 
       <div class="px-20 py-20 sm:px-0  grid justify-items-center " >
         <div class="border-4 border-dashed border-gray-200  rounded-lg h-60 w-1/3 h-9">
         <svg class="mx-auto h-12 w-12 text-gray-400 my-5 " stroke="currentColor" fill="none" viewBox="0 0 48 48" aria-hidden="true">

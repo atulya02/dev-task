@@ -1,6 +1,6 @@
 import Breadcrumb from './breadcrumb';
 import Link from 'next/link';
-const Navbar = () => (
+const Navigationbar = () => (
     
     <div>
         <div>
@@ -136,4 +136,4 @@ const Navbar = () => (
     </div>
 );
 
-export default Navbar;
+export default Navigationbar;
